@@ -209,11 +209,11 @@ frontend/
 🎯 Priority Focus: Criticality levels help prioritize attention and resources
 
 ## output screens :
-<img width="1899" height="919" alt="Screensho<img width="1879" height="916" alt="Screenshot 2025-07-30 172724" src="https://github.com/user-attachments/assets/5ff708ed-eaec-4612-8816-d0d25f81586d" />
-t 2025-07-30 172639" src="https://github.com/user-attachments/assets/8f2ba341-edda-47f3-86b4-4d51aae2a080" />
-<img width="1873" height="921" alt="Screenshot 2025-07-30 172749" src="https://github.com/user-attachments/assets/22389565-419d-4d53-838c-e96ffff43b46" />
-
-<img width="1889" height="916" alt="Screenshot 2025-07-30 172654" src="https://github.com/user-attachment<img width="1884" height="914" alt="Screenshot 2025-07-30 172758" src="https://github.com/user-attachments/assets/8a4dbb4d-aa26-44b3-bea1-e29c2393158a" />
-s<img width="1878" height="913" alt="Screenshot 2025-07-30 172713" src="https://github.com/user-attachments/assets/8996884c-85b5-43b5-973e-f37da1c43b36" />
-/assets/89a7edc6-3cc0-4a48-868d-b6444c8821ce" /><img width="1878" height="920" alt="Screenshot 2025-07-30 172739" src="https://github.com/user-attachments/assets/3df19a54-4d6b-4073-8a16-fda8c0f40048" />
+<img width="1899" height="919" alt="Screenshot 2025-07-30 172639" src="https://github.com/user-attachments/assets/384584f8-c540-49ba-b584-4281d287ab66" />
+<img width="1889" height="916" alt="Screenshot 2025-07-30 172654" src="https://github.com/user-attachments/assets/50ac4a53-8ec2-4348-b65e-3a20fd3535f8" />
+<img width="1878" height="913" alt="Screenshot 2025-07-30 172713" src="https://github.com/user-attachments/assets/f9e1c23b-24d9-44ab-a674-b94383144710" />
+<img width="1879" height="916" alt="Screenshot 2025-07-30 172724" src="https://github.com/user-attachments/assets/f43578cc-4f34-4745-8b50-3e3d790daea5" />
+<img width="1878" height="920" alt="Screenshot 2025-07-30 172739" src="https://github.com/user-attachments/assets/4a1165be-1fbc-4c79-9a4d-3a83aa388607" />
+<img width="1873" height="921" alt="Screenshot 2025-07-30 172749" src="https://github.com/user-attachments/assets/741668d3-d33b-4f1e-99dc-69d9507c5e0f" />
+<img width="1884" height="914" alt="Screenshot 2025-07-30 172758" src="https://github.com/user-attachments/assets/33a7dfe2-69e7-4030-9e63-773aa4c653a3" />
 
