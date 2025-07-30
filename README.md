@@ -21,7 +21,7 @@ Core Functionality
 ### Backend
 
 Node.js - Runtime environment.
-Express.js - Web framework.
+Express.js -  Server .
 MongoDB - Database for data persistence.
 Mongoose - ODM for MongoDB.
 CORS - Cross-origin resource sharing.
