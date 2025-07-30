@@ -1,6 +1,6 @@
-### 🏭 Smart Warehouse Reordering System
+# 🏭 Smart Warehouse Reordering System
 A comprehensive full-stack inventory management application that intelligently monitors stock levels and provides automated reordering recommendations for e-commerce businesses.
-# 🚀 Features
+## 🚀 Features
 Core Functionality
 
 📊 Intelligent Stock Analysis: Calculate days of stock remaining based on current inventory and sales patterns
@@ -9,7 +9,7 @@ Core Functionality
 📈 Demand Spike Simulation: Test how sudden demand increases affect inventory and reorder requirements
 🎯 Priority Management: Criticality-based product categorization (High/Medium/Low)
 
-# User Interface
+## User Interface
 
 📱 Responsive Design: Beautiful, modern UI built with React + Tailwind CSS
 🎨 Interactive Dashboard: Real-time inventory overview with key metrics
@@ -18,7 +18,7 @@ Core Functionality
 🔍 Smart Notifications: Real-time feedback system for all operations
 
 ## 🛠️ Technology Stack
-# Backend
+### Backend
 
 Node.js - Runtime environment
 Express.js - Web framework
@@ -26,21 +26,21 @@ MongoDB - Database for data persistence
 Mongoose - ODM for MongoDB
 CORS - Cross-origin resource sharing
 
-# Frontend
+### Frontend
 
 React 18 - UI library
 Vite - Build tool and development server
 Tailwind CSS - Utility-first CSS framework
 Axios - HTTP client for API communication
 
-📋 Prerequisites
+### 📋 Prerequisites
 Before running this application, make sure you have:
 
 Node.js (v16.0.0 or higher)
 npm or yarn package manager
 MongoDB (local installation or MongoDB Atlas account)
 
-# 🚀 Installation & Setup
+### 🚀 Installation & Setup
 1. Clone the Repository
 git clone <repository-url>
 cd smart_warehouse_reordering_system
@@ -48,20 +48,20 @@ cd smart_warehouse_reordering_system
 Navigate to backend directory
 cd backend
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Create environment file
+### Create environment file
 with .env in backend(must required)
 
-# Edit .env file with your MongoDB connection string
-# MONGODB_URI=mongodb://localhost:27017/warehouse_db
-# PORT=5000
+### Edit .env file with your MongoDB connection string
+### MONGODB_URI=mongodb://localhost:27017/warehouse_db
+### PORT=5000
 3. Frontend Setup
 Navigate to frontend directory (in a new terminal)
 cd frontend
 
-# Install dependencies
+### Install dependencies
 npm install
 4. Database Setup
 Option A: Local MongoDB
@@ -82,11 +82,11 @@ Start Backend Server --
 
 cd backend
 npm run dev
-# Server will start on http://localhost:5000
+### Server will start on http://localhost:5000
 Start Frontend Development Server
 cd frontend
 npm run dev
-# Frontend will start on http://localhost:3000
+### Frontend will start on http://localhost:3000
 Load Sample Data
 
 Open the application in your browser
@@ -109,7 +109,7 @@ Analysis
 GET /reorder-analysis - Get reorder analysis for all products
 POST /simulate-demand-spike - Simulate demand spike impact
 
-# Utilities
+### Utilities
 
 POST /seed-data - Populate database with sample data
 
@@ -126,7 +126,7 @@ POST /api/products
   "costPerUnit": 29.99,
   "criticality": "high"
 }
-# 🧮 Business Logic
+### 🧮 Business Logic
 Key Calculations
 Days of Stock Remaining
 Days Remaining = Current Stock ÷ Average Daily Sales
@@ -144,7 +144,7 @@ Update remaining stock: Current Stock - Spike Consumption
 Recalculate averages: Weighted average including spike period
 Determine new requirements: Based on updated metrics
 
-# 🎨 Features Overview
+### 🎨 Features Overview
 Dashboard
 
 📊 Key Metrics: Total products, low stock alerts, inventory value, critical items
@@ -175,7 +175,7 @@ bash# Backend (.env)
 MONGODB_URI=mongodb://localhost:27017/warehouse_db
 PORT=5000
 
-# For MongoDB Atlas
+### For MongoDB Atlas
 MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/warehouse_db
 Customization Options
 
@@ -183,7 +183,7 @@ Safety Buffer Days: Modify the 5-day default buffer in calculations
 Target Supply Days: Change the 60-day default supply target
 Criticality Levels: Extend beyond High/Medium/Low if needed
 
-# 🏗️ Architecture
+## 🏗️ Architecture
 Backend Structure
 backend/
 ├── server.js          # Main server file
@@ -201,14 +201,15 @@ frontend/
 ├── package.json      # Dependencies and scripts
 ├── vite.config.js    # Vite configuration
 
-# 🎯 Key Business Benefits
+### 🎯 Key Business Benefits
 🚀 Reduced Stockouts: Proactive reordering prevents inventory shortages
 💰 Cost Optimization: Right-sized orders minimize holding costs
 ⏰ Time Savings: Automated analysis reduces manual inventory management
 📊 Data-Driven Decisions: Historical patterns inform future planning
 🎯 Priority Focus: Criticality levels help prioritize attention and resources
 
-output screens :<img width="1899" height="919" alt="Screensho<img width="1879" height="916" alt="Screenshot 2025-07-30 172724" src="https://github.com/user-attachments/assets/5ff708ed-eaec-4612-8816-d0d25f81586d" />
+## output screens :
+<img width="1899" height="919" alt="Screensho<img width="1879" height="916" alt="Screenshot 2025-07-30 172724" src="https://github.com/user-attachments/assets/5ff708ed-eaec-4612-8816-d0d25f81586d" />
 t 2025-07-30 172639" src="https://github.com/user-attachments/assets/8f2ba341-edda-47f3-86b4-4d51aae2a080" />
 <img width="1873" height="921" alt="Screenshot 2025-07-30 172749" src="https://github.com/user-attachments/assets/22389565-419d-4d53-838c-e96ffff43b46" />
 
