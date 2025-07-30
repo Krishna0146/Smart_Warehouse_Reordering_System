@@ -11,41 +11,41 @@ Core Functionality
 
 ## User Interface
 
-📱 Responsive Design: Beautiful, modern UI built with React + Tailwind CSS
-🎨 Interactive Dashboard: Real-time inventory overview with key metrics
-📋 Product Management: Add, edit, and delete products with validation
-📊 Detailed Analytics: Comprehensive reorder analysis with sorting and filtering
-🔍 Smart Notifications: Real-time feedback system for all operations
+📱 Responsive Design: Beautiful, modern UI built with React + Tailwind CSS.
+🎨 Interactive Dashboard: Real-time inventory overview with key metrics.
+📋 Product Management: Add, edit, and delete products with validation.
+📊 Detailed Analytics: Comprehensive reorder analysis with sorting and filtering.
+🔍 Smart Notifications: Real-time feedback system for all operations.
 
 ## 🛠️ Technology Stack
 ### Backend
 
-Node.js - Runtime environment
-Express.js - Web framework
-MongoDB - Database for data persistence
-Mongoose - ODM for MongoDB
-CORS - Cross-origin resource sharing
+Node.js - Runtime environment.
+Express.js - Web framework.
+MongoDB - Database for data persistence.
+Mongoose - ODM for MongoDB.
+CORS - Cross-origin resource sharing.
 
 ### Frontend
 
-React 18 - UI library
-Vite - Build tool and development server
-Tailwind CSS - Utility-first CSS framework
-Axios - HTTP client for API communication
+React 18 - UI library.
+Vite - Build tool and development server.
+Tailwind CSS - Utility-first CSS framework.
+Axios - HTTP client for API communication.
 
 ### 📋 Prerequisites
 Before running this application, make sure you have:
 
-Node.js (v16.0.0 or higher)
-npm or yarn package manager
-MongoDB (local installation or MongoDB Atlas account)
+Node.js (v16.0.0 or higher).
+npm or yarn package manager.
+MongoDB (local installation or MongoDB Atlas account).
 
 ### 🚀 Installation & Setup
-1. Clone the Repository
-git clone <repository-url>
+1. Clone the Repository:
+git clone <repository-url>.
 cd smart_warehouse_reordering_system
-2. Backend Setup
-Navigate to backend directory
+2. Backend Setup -
+Navigate to backend directory:
 cd backend
 
 ### Install dependencies
@@ -57,25 +57,25 @@ with .env in backend(must required)
 ### Edit .env file with your MongoDB connection string
 ### MONGODB_URI=mongodb://localhost:27017/warehouse_db
 ### PORT=5000
-3. Frontend Setup
-Navigate to frontend directory (in a new terminal)
+3. Frontend Setup -
+Navigate to frontend directory (in a new terminal):
 cd frontend
 
 ### Install dependencies
-npm install
-4. Database Setup
-Option A: Local MongoDB
+npm install.
+4. Database Setup - 
+Option A: Local MongoDB.
 
-Install MongoDB on your system
-Start MongoDB service
-The application will automatically create the database
+Install MongoDB on your system.
+Start MongoDB service.
+The application will automatically create the database.
 
-Option B: MongoDB Atlas (Cloud)
+Option B: MongoDB Atlas (Cloud).
 
-Create a free account at MongoDB Atlas
-Create a new cluster
-Get your connection string
-Update the MONGODB_URI in your .env file
+Create a free account at MongoDB Atlas,
+Create a new cluster,
+Get your connection string,
+Update the MONGODB_URI in your .env file.
 
 🏃‍♂️ Running the Application
 Start Backend Server -- 
