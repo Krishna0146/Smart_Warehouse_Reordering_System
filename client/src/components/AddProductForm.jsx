@@ -3,6 +3,29 @@ import axios from 'axios';
 
 const API_BASE_URL = 'http://localhost:5000/api';
 
+// Move FormInput component outside to prevent re-creation on each render
+const FormInput = ({ label, field, type = 'text', placeholder, min, step, required = true, formData, handleInputChange, errors }) => (
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      {label} {required && <span className="text-red-500">*</span>}
+    </label>
+    <input
+      type={type}
+      value={formData[field]}
+      onChange={(e) => handleInputChange(field, e.target.value)}
+      placeholder={placeholder}
+      min={min}
+      step={step}
+      className={`w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
+        errors[field] ? 'border-red-500' : 'border-gray-300'
+      }`}
+    />
+    {errors[field] && (
+      <p className="text-red-500 text-xs mt-1">{errors[field]}</p>
+    )}
+  </div>
+);
+
 const AddProductForm = ({ onProductAdded, showNotification }) => {
   const [formData, setFormData] = useState({
     productId: '',
@@ -132,29 +155,6 @@ const AddProductForm = ({ onProductAdded, showNotification }) => {
     handleInputChange('productId', sampleId);
   };
 
-  // Input component with error handling
-  const FormInput = ({ label, field, type = 'text', placeholder, min, step, required = true }) => (
-    <div>
-      <label className="block text-sm font-medium text-gray-700 mb-1">
-        {label} {required && <span className="text-red-500">*</span>}
-      </label>
-      <input
-        type={type}
-        value={formData[field]}
-        onChange={(e) => handleInputChange(field, e.target.value)}
-        placeholder={placeholder}
-        min={min}
-        step={step}
-        className={`w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
-          errors[field] ? 'border-red-500' : 'border-gray-300'
-        }`}
-      />
-      {errors[field] && (
-        <p className="text-red-500 text-xs mt-1">{errors[field]}</p>
-      )}
-    </div>
-  );
-
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -175,6 +175,9 @@ const AddProductForm = ({ onProductAdded, showNotification }) => {
                   label="Product ID"
                   field="productId"
                   placeholder="e.g., PROD-001"
+                  formData={formData}
+                  handleInputChange={handleInputChange}
+                  errors={errors}
                 />
                 <button
                   type="button"
@@ -188,6 +191,9 @@ const AddProductForm = ({ onProductAdded, showNotification }) => {
                 label="Product Name"
                 field="name"
                 placeholder="e.g., Wireless Bluetooth Headphones"
+                formData={formData}
+                handleInputChange={handleInputChange}
+                errors={errors}
               />
             </div>
           </div>
@@ -202,6 +208,9 @@ const AddProductForm = ({ onProductAdded, showNotification }) => {
                 type="number"
                 placeholder="e.g., 100"
                 min="0"
+                formData={formData}
+                handleInputChange={handleInputChange}
+                errors={errors}
               />
               <FormInput
                 label="Average Daily Sales"
@@ -210,6 +219,9 @@ const AddProductForm = ({ onProductAdded, showNotification }) => {
                 placeholder="e.g., 5.2"
                 min="0"
                 step="0.1"
+                formData={formData}
+                handleInputChange={handleInputChange}
+                errors={errors}
               />
             </div>
           </div>
@@ -224,6 +236,9 @@ const AddProductForm = ({ onProductAdded, showNotification }) => {
                 type="number"
                 placeholder="e.g., 7"
                 min="1"
+                formData={formData}
+                handleInputChange={handleInputChange}
+                errors={errors}
               />
               <FormInput
                 label="Minimum Reorder Quantity"
@@ -231,6 +246,9 @@ const AddProductForm = ({ onProductAdded, showNotification }) => {
                 type="number"
                 placeholder="e.g., 50"
                 min="1"
+                formData={formData}
+                handleInputChange={handleInputChange}
+                errors={errors}
               />
             </div>
           </div>
@@ -246,6 +264,9 @@ const AddProductForm = ({ onProductAdded, showNotification }) => {
                 placeholder="e.g., 29.99"
                 min="0.01"
                 step="0.01"
+                formData={formData}
+                handleInputChange={handleInputChange}
+                errors={errors}
               />
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
